@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rin · Cotton Candy Kabukicho</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Mesmo estilo */
+        .girl-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 100px 20px; }
+        .girl-container { background: rgba(0,0,0,0.8); backdrop-filter: blur(12px); border: 1px solid #ff0040; border-radius: 30px; max-width: 1000px; width: 100%; display: flex; flex-wrap: wrap; gap: 2rem; padding: 2rem; box-shadow: 0 0 30px rgba(255,0,64,0.3); }
+        .girl-img { flex: 1; min-width: 250px; }
+        .girl-img img { width: 100%; border-radius: 20px; border: 1px solid #ff0040; }
+        .girl-info { flex: 1; text-align: left; }
+        .girl-info h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #ff0040; text-shadow: 0 0 10px #ff0040; margin-bottom: 1rem; }
+        .girl-info p { margin: 1rem 0; color: #f0e6d0; line-height: 1.6; }
+        .btn-voltar { background: none; border: 1px solid #ff0040; padding: 10px 25px; border-radius: 30px; color: #ff0040; cursor: pointer; margin-top: 1rem; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .btn-voltar:hover { background: #ff0040; color: #000; }
+        @media (max-width: 768px) { .girl-container { flex-direction: column; text-align: center; } .girl-info { text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="../imagens/night%20club,%20Tokyo,%20Japan.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="girl-page">
+        <div class="girl-container">
+            <div class="girl-img">
+                <img src="../imagens/Rin.jpg" alt="Rin">
+            </div>
+            <div class="girl-info">
+                <h1>🌹 RIN 🌹</h1>
+                <p><strong>Idade:</strong> 23 anos</p>
+                <p><strong>Estilo:</strong> Doce · Misteriosa · Envolvente</p>
+                <p><strong>Sobre:</strong> Rin é doce como algodão-doce, mas perigosa como a noite. Seu sorriso esconde mistérios que só os mais atentos descobrem.</p>
+                <p><strong>Idiomas:</strong> Japonês, Inglês, Espanhol básico</p>
+                <p><strong>Disponibilidade:</strong> Quinta a Sábado · 21h às 2h</p>
+                <button id="btn-contato" class="btn-voltar" onclick="alert('📞 Contato: host@cottoncandy.jp\nSolicite sua reserva.')">📞 SOLICITAR RESERVA</button>
+                <br>
+                <a href="../index.html#girls" class="btn-voltar">← Voltar</a>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop preload="auto"></audio>
+    <script src="../script.js"></script>
+</body>
+</html>
