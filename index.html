@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotton Candy Kabukicho · 闇の夜</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- VÍDEO PRINCIPAL -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="imagens/night%20club,%20Tokyo,%20Japan.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo neon-pink">
+                <i class="bi bi-diamond-fill"></i>
+                <span>COTTON CANDY</span>
+                <i class="bi bi-diamond-fill"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="nav-neon">闇 INÍCIO</a></li>
+                    <li><a href="#drinks" class="nav-neon">DRINKS</a></li>
+                    <li><a href="#girls" class="nav-neon">GIRLS</a></li>
+                    <li><a href="#gallery" class="nav-neon">GALERIA</a></li>
+                    <li><a href="#local" class="nav-neon">LOCAL</a></li>
+                </ul>
+            </nav>
+            <div class="vip-btn">
+                <button id="btn-vip" class="neon-btn-vip">⛩️ VIP ⛩️</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="neon-title-multi">COTTON CANDY <span class="neon-red">KABUKICHO</span></h1>
+                    <p class="subtitle neon-pink">"Um pedacinho doce de Kabukicho"</p>
+                    <div class="neon-line-rainbow"></div>
+                    <p class="desc neon-blue">Shinjuku · Clube Privê · 21h - 5h</p>
+                    <button id="btn-reserve" class="btn-neon-big neon-yellow">⚡ ACESSO RESTRITO ⚡</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MÚSICA -->
+        <section class="music-section">
+            <div class="container">
+                <div class="music-neon-bar neon-cyan">
+                    <i class="bi bi-soundwave"></i>
+                    <span id="music-status" class="neon-pink">🎵 TOKYO NIGHT CORE 🎵</span>
+                    <div class="music-buttons">
+                        <button id="btn-play" class="neon-small neon-green">▶ PLAY</button>
+                        <button id="btn-pause" class="neon-small neon-red">⏸ PAUSE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DRINKS (usando giri001, giri002, giri003) -->
+        <section class="drinks" id="drinks">
+            <div class="container">
+                <h2 class="section-neon-multi">🍸 <span class="neon-red">SIGNATURE DRINKS</span> 🍸</h2>
+                <div class="drinks-banner" style="background-image: url('imagens/tumblr_525b14e513cf25d2c26e85d989dae635_8b1b70a5_400.webp');">
+                    <div class="banner-overlay"></div>
+                </div>
+                <div class="cards-grid">
+                    <div class="neon-card card-neon-green">
+                        <div class="card-img" style="background-image: url('imagens/giri001.jpg');"></div>
+                        <h3 class="neon-green">SAKURA SPRITZ</h3>
+                        <p>Vodka · Flor de cerejeira · Espumante</p>
+                        <span class="price-neon price-green">¥1.200</span>
+                    </div>
+                    <div class="neon-card card-neon-yellow">
+                        <div class="card-img" style="background-image: url('imagens/giri002.jpg');"></div>
+                        <h3 class="neon-yellow">NEON MOJITO</h3>
+                        <p>Rum · Hortelã · Limão · Xarope neon</p>
+                        <span class="price-neon price-yellow">¥1.500</span>
+                    </div>
+                    <div class="neon-card card-neon-blue">
+                        <div class="card-img" style="background-image: url('imagens/giri003.jpg');"></div>
+                        <h3 class="neon-blue">MIDNIGHT KISS</h3>
+                        <p>Gin · Framboesa · Prosecco</p>
+                        <span class="price-neon price-blue">¥1.800</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOKYO HOSTESSES (4 garotas: Miyu, Saki, Rin, Yumi) -->
+        <section class="girls" id="girls">
+            <div class="container">
+                <h2 class="section-neon-multi">👘 <span class="neon-pink">TOKYO HOSTESSES</span> 👘</h2>
+                <p class="sub-neon neon-purple">Clube Privê · Exclusivo</p>
+                
+                <!-- VÍDEO DAS GAROTAS -->
+                <div class="girls-video">
+                    <video autoplay muted loop playsinline class="inline-video">
+                        <source src="imagens/CUTE%20&%20SEXY%20(TIK%20TOK).mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="neon-card girl card-neon-pink">
+                        <div class="card-img" style="background-image: url('imagens/Miyu.jpg');"></div>
+                        <h3 class="neon-pink">MIYU</h3>
+                        <p>Beleza que cativa</p>
+                        <a href="girls/miyu.html" class="btn-hostess-link neon-pink">✧ SOLICITAR ✧</a>
+                    </div>
+                    <div class="neon-card girl card-neon-red">
+                        <div class="card-img" style="background-image: url('imagens/Saki.jpg');"></div>
+                        <h3 class="neon-red">SAKI</h3>
+                        <p>Presença magnética</p>
+                        <a href="girls/saki.html" class="btn-hostess-link neon-red">✧ SOLICITAR ✧</a>
+                    </div>
+                    <div class="neon-card girl card-neon-purple">
+                        <div class="card-img" style="background-image: url('imagens/Rin.jpg');"></div>
+                        <h3 class="neon-purple">RIN</h3>
+                        <p>Doce como algodão</p>
+                        <a href="girls/rin.html" class="btn-hostess-link neon-purple">✧ SOLICITAR ✧</a>
+                    </div>
+                    <div class="neon-card girl card-neon-cyan">
+                        <div class="card-img" style="background-image: url('imagens/Yumi.jpg');"></div>
+                        <h3 class="neon-cyan">YUMI</h3>
+                        <p>Beijo que vicia</p>
+                        <a href="girls/yumi.html" class="btn-hostess-link neon-cyan">✧ SOLICITAR ✧</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA DO CLUBE (girl001, girl002, girl003) + vídeo ambiente -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="section-neon-multi">📸 <span class="neon-yellow">CLUB GALLERY</span> 📸</h2>
+                <div class="gallery-video">
+                    <video autoplay muted loop playsinline class="inline-video">
+                        <source src="imagens/video%200001.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" style="background-image: url('imagens/girl001.jpg');"></div>
+                    <div class="gallery-item" style="background-image: url('imagens/girl002.jpg');"></div>
+                    <div class="gallery-item" style="background-image: url('imagens/girl003.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="location" id="local">
+            <div class="container">
+                <h2 class="section-neon-multi">📍 <span class="neon-cyan">KABUKICHO</span> 📍</h2>
+                <p class="location-address neon-yellow">Beco Neon · Entrada pela luz vermelha</p>
+                <button id="btn-mapa" class="btn-neon-big neon-blue">🌙 REVELAR LOCALIZAÇÃO 🌙</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="neon-pink">⛩️ Cotton Candy Kabukicho · 闇 · Shinjuku ⛩️</p>
+            <p class="footer-small neon-gray">Reserva exclusiva · Contato restrito</p>
+        </div>
+    </footer>
+
+    <audio id="bg-music" loop preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
