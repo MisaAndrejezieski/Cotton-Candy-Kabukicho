@@ -11,7 +11,7 @@ const pauseBtn = document.getElementById('btn-pause');
 const musicStatus = document.getElementById('music-status');
 
 if (bgMusic) {
-    bgMusic.src = 'musica.mp3';
+    bgMusic.src = 'imagens/musica.mp3';
     bgMusic.volume = 0.5;
     bgMusic.loop = true;
     
