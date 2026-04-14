@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotton Candy Kabukicho · 闇の夜</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- VÍDEO DE FUNDO -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="images/night club, Tokyo, Japan.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- HEADER SOMBRIO -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="bi bi-diamond-fill"></i>
+                <span>COTTON CANDY</span>
+                <i class="bi bi-diamond-fill"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">闇 INÍCIO</a></li>
+                    <li><a href="#drinks">DRINKS</a></li>
+                    <li><a href="#girls">GIRLS</a></li>
+                    <li><a href="#local">闇 LOCAL</a></li>
+                </ul>
+            </nav>
+            <div class="vip-btn">
+                <button id="btn-vip" class="neon-btn">⛩️ VIP ⛩️</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO NEON -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="neon-title">COTTON CANDY <span class="neon-red">KABUKICHO</span></h1>
+                    <p class="subtitle">"Um pedacinho doce de Kabukicho"</p>
+                    <div class="neon-line"></div>
+                    <p class="desc">Shinjuku · Clube Privê · 21h - 5h</p>
+                    <button id="btn-reserve" class="btn-neon-big">⚡ ACESSO RESTRITO ⚡</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC CONTROL -->
+        <section class="music-section">
+            <div class="container">
+                <div class="music-neon-bar">
+                    <i class="bi bi-soundwave"></i>
+                    <span id="music-status">TOKYO NIGHT CORE</span>
+                    <div class="music-buttons">
+                        <button id="btn-play" class="neon-small">▶</button>
+                        <button id="btn-pause" class="neon-small">⏸</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DRINKS SECTION com fotos giri -->
+        <section class="drinks" id="drinks">
+            <div class="container">
+                <h2 class="section-neon">🍸 <span class="neon-red">SIGNATURE DRINKS</span> 🍸</h2>
+                <div class="cards-grid">
+                    <div class="neon-card">
+                        <div class="card-img" style="background-image: url('images/giri001.jpg');"></div>
+                        <h3>SAKURA SPRITZ</h3>
+                        <p>Vodka · Flor de cerejeira · Espumante</p>
+                        <span class="price-neon">¥1.200</span>
+                    </div>
+                    <div class="neon-card">
+                        <div class="card-img" style="background-image: url('images/giri002.jpg');"></div>
+                        <h3>NEON MOJITO</h3>
+                        <p>Rum · Hortelã · Limão · Xarope neon</p>
+                        <span class="price-neon">¥1.500</span>
+                    </div>
+                    <div class="neon-card">
+                        <div class="card-img" style="background-image: url('images/giri003.jpg');"></div>
+                        <h3>MIDNIGHT KISS</h3>
+                        <p>Gin · Framboesa · Prosecco</p>
+                        <span class="price-neon">¥1.800</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GIRLS SECTION com fotos reais -->
+        <section class="girls" id="girls">
+            <div class="container">
+                <h2 class="section-neon">👘 <span class="neon-red">TOKYO HOSTESSES</span> 👘</h2>
+                <p class="sub-neon">Clube Privê · Exclusivo</p>
+                <div class="cards-grid">
+                    <div class="neon-card girl">
+                        <div class="card-img" style="background-image: url('images/Miyu.jpg');"></div>
+                        <h3>MIYU</h3>
+                        <p>Silêncio que cativa</p>
+                        <button class="btn-hostess" data-girl="Miyu">✧ SOLICITAR ✧</button>
+                    </div>
+                    <div class="neon-card girl">
+                        <div class="card-img" style="background-image: url('images/Saki.jpg');"></div>
+                        <h3>SAKI</h3>
+                        <p>Presença magnética</p>
+                        <button class="btn-hostess" data-girl="Saki">✧ SOLICITAR ✧</button>
+                    </div>
+                    <div class="neon-card girl">
+                        <div class="card-img" style="background-image: url('images/Rin.jpg');"></div>
+                        <h3>RIN</h3>
+                        <p>Doce como algodão</p>
+                        <button class="btn-hostess" data-girl="Rin">✧ SOLICITAR ✧</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO YAKUZA STYLE -->
+        <section class="location" id="local">
+            <div class="container">
+                <h2 class="section-neon">📍 <span class="neon-red">KABUKICHO</span> 📍</h2>
+                <p class="location-address">Beco Neon · Entrada pela luz vermelha</p>
+                <button id="btn-mapa" class="btn-neon-big">🌙 REVELAR LOCALIZAÇÃO 🌙</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>⛩️ Cotton Candy Kabukicho · 闇 · Shinjuku ⛩️</p>
+            <p class="footer-small">Reserva exclusiva · Contato restrito</p>
+        </div>
+    </footer>
+
+    <audio id="bg-music" loop preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
